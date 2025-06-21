@@ -13,6 +13,8 @@ build/
 dist/
 *.sqlite3
 *.log
+.env
+
 
 # Docker
 .dockerignore
