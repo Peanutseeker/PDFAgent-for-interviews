@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/ # uv typically creates this
+*.egg-info/
+pip-wheel-metadata/
+build/
+dist/
+*.sqlite3
+*.log
+
+# Docker
+.dockerignore
+docker-compose.yml # If specific to your local setup
+
+# uv
+.uv_cache/
+
+# IDE specific
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+#data
+data/
+outputs/
