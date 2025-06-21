@@ -1,0 +1,28 @@
+    [project]
+    name = "comp-eval-agent"
+    version = "0.1.0"
+    description = "An AI agent to generate professional interview questions for university comprehensive evaluation."
+    authors = [
+        { name = "Howard Xu", email = "howard_xu@sjtu.edu.com" },
+    ]
+    dependencies = [
+    "faiss-cpu>=1.11.0",
+    "google-generativeai>=0.8.5",
+    "langchain>=0.3.26",
+    "langchain-google-genai>=2.0.10",
+    "pymupdf>=1.26.1",
+    "python-dotenv>=1.1.0",
+    "sentence-transformers>=4.1.0",
+] # 依赖项将由 uv add 自动填充
+    requires-python = ">=3.11"
+    readme = "README.md"
+    license = { text = "MIT" }
+    
+    [build-system]
+    requires = ["hatchling"]
+    build-backend = "hatchling.build"
+    
+    # 【重要】预先配置打包选项，避免未来出错
+    # 告诉打包工具，我们的源代码位于 "src" 文件夹内
+    [tool.hatch.build.targets.wheel]
+    packages = ["src"]
