@@ -34,5 +34,5 @@ docker-compose.yml # If specific to your local setup
 Thumbs.db
 
 #data
-data/
-outputs/
+#data/
+#outputs/
