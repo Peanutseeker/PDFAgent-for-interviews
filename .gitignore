@@ -33,6 +33,3 @@ docker-compose.yml # If specific to your local setup
 .DS_Store
 Thumbs.db
 
-#data
-#data/
-#outputs/
